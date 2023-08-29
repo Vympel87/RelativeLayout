@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gambarProduk"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:layout_below="@id/title"
+        android:src="@drawable/samsung"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambarProduk"
+        android:text="@string/phone_name"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambarProduk"
+        android:text="@string/phone_price"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"  />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:layout_below="@id/textName"
+        android:text="@string/phone_desc"/>
+
+    <ImageView
+        android:id="@+id/Memory"
+        android:src="@drawable/baseline_smartphone_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:layout_below="@id/textDesc"/>
+
+    <TextView
+        android:id="@+id/textMemory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDesc"
+        android:layout_marginHorizontal="5dp"
+        android:layout_alignBottom="@id/Memory"
+        android:layout_alignTop="@id/Memory"
+        android:layout_toEndOf="@id/Memory"
+        android:text="@string/memory"
+        />
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_photo_camera_24"
+        android:layout_below="@id/Memory"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMemory"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/camera"
+        android:layout_alignBottom="@id/camera"
+        android:layout_alignTop="@id/camera"
+        android:layout_toEndOf="@id/camera"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/baseline_bookmark_border_24"
+        android:text="@string/bookmark"
+        app:cornerRadius="20dp"/>
+
+
+
+</RelativeLayout>
